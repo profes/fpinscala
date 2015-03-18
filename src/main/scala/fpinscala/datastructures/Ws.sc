@@ -1,6 +1,12 @@
 import fpinscala.datastructures._
 
-val ex1: List[Double] = Nil
-val ex2: List[Int] = Cons(1, Nil)
-val ex3: List[String] = Cons("a", Cons("b", Nil))
+val l = Cons(1, Nil)
+Cons("a", Cons("b", Nil))
+
+List(1, 2, 3) match {
+  case _ => 42
+}
+List(1, 2, 3) match {
+  case Cons(h, _) => h
+}
 
