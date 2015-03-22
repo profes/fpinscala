@@ -27,4 +27,13 @@ List.init(List(1, 2, 3, 4, 5))
 List.dropWhile2(List(1, 2, 3, 4, 5))(_ > 2)
 
 List.sum2(List(1, 2, 3))
-List.product(List(1, 2, 3))
+List.product2(List(1, 2, 3, 4))
+
+List.foldRight(List(1,2,3), Nil:List[Int])(Cons(_,_))
+List.length(List(1, 2, 3))
+List.foldLeft(List(1, 2, 3), 0)(_ + _)
+
+List.sum3(List(1, 2, 3))
+List.product3(List(1, 2, 3, 4))
+List.length3(List(1, 2, 3))
+List.reverse(List(1, 2, 3))
