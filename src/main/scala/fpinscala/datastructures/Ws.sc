@@ -9,6 +9,8 @@ List(1, 2, 3) match {
 }
 List(1, 2, 3) match {
   case Cons(h, _) => h
+  case Cons(h, Nil) => h
+  case Nil => -1
 }
 
 List(1, 2, 3, 4, 5) match {
