@@ -62,6 +62,4 @@ object Ch9 {
 
     (numbers.sum, numbers.sum / numbers.size, numbers.min, numbers.max)
   }
-
-
 }
