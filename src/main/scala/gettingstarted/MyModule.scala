@@ -12,6 +12,11 @@ object MyModule {
     msg.format(x, abs(x))
   }
 
+  def foo() = {
+    val i = 1
+    i.toString
+  }
+
   private def formatFactorial(n: Int) = {
     val msg = "The factorial of &d is %d"
     msg.format(n, factorial(n))
@@ -22,7 +27,7 @@ object MyModule {
     msg.format(name, n, f(n))
   }
 
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
     println(formatAbs(-7))
     println(formatFactorial(4))
     println(formatResult("abs", -7, abs))

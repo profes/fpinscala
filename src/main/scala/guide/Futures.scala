@@ -49,7 +49,7 @@ object Futures {
 
   // some exceptions for things that might go wrong in the individual steps
   // (we'll need some of them later, use the others when experimenting
-  // with the code):
+  // with the code):+
   case class GrindingException(msg: String) extends Exception(msg)
 
   case class FrothingException(msg: String) extends Exception(msg)
